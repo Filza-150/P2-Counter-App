@@ -18,13 +18,25 @@ let increaseNumbers = document.getElementById("change-numbers");
 function plusBtn() {
     count++;
   increaseNumbers.innerHTML = count;
-  if (count === 101) {
-    count = 100
-    increaseNumbers.innerHTML = count;
-  } 
+//   if (count === 101) {
+//     count = 100
+//     increaseNumbers.innerHTML = count;
+//   } 
 }
 
 function minusBtn() {
     count--;
     increaseNumbers.innerHTML = count;
+     if (count === -1) {
+    count = 0
+    increaseNumbers.innerHTML = count;
+    // let arrow1 = document.getElementById("arrow");
+    // arrow1.style.visibility = "hidden"
+  }
+}
+
+function resetBtn() {
+    count = 0;
+    increaseNumbers.innerHTML = count;
+    
 }

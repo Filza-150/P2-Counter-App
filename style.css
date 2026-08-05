@@ -7,6 +7,9 @@
 *::selection{
   background-color: transparent;
 }
+body{
+  overflow: hidden;
+}
 .container {
   background-color: #eef5ff;
   width: 100%;
@@ -104,6 +107,12 @@
   padding: 14px 34px;
   border-radius: 10px;
   color: #fff;
+}
+.reset-btn:hover {
+  transform:translateY(-6px);
+  box-shadow:
+  0 20px 40px rgba(0,0,0,.15);
+  padding: 16px 36px;
 }
 
 @media (max-width: 500px) {
