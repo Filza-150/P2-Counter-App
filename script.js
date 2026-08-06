@@ -18,6 +18,7 @@ let increaseNumbers = document.getElementById("change-numbers");
 function plusBtn() {
     count++;
   increaseNumbers.innerHTML = count;
+increaseNumbers.style.color = "#71a1ff"
 //   if (count === 101) {
 //     count = 100
 //     increaseNumbers.innerHTML = count;
@@ -27,7 +28,11 @@ function plusBtn() {
 function minusBtn() {
     count--;
     increaseNumbers.innerHTML = count;
-     if (count === -1) {
+    if (count > 0) {
+        increaseNumbers.style.color = "green"
+        
+    }
+    if (count === -1) {
     count = 0
     increaseNumbers.innerHTML = count;
     // let arrow1 = document.getElementById("arrow");
@@ -38,5 +43,6 @@ function minusBtn() {
 function resetBtn() {
     count = 0;
     increaseNumbers.innerHTML = count;
+    increaseNumbers.style.color = "black"
     
 }
